@@ -9,7 +9,9 @@ Abstract: Cisco CISCO-CLASS-BASED-QOS-MIB is one of the most complex and not cle
 
 Script written in python 2.7, tested on Linux Centos7.
 
+
 Script Installation:
+
  Install Net-SNMP libraries
  
  Unix# yum install net-snmp.x86_64
@@ -37,6 +39,7 @@ Script Installation:
  Import Cisco.QOS.SNMP.For.Zabbix.xml to Zabbix Templates Configuration/Templates
  
  Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
+
 
 
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
