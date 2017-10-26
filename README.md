@@ -5,7 +5,7 @@ Monitor CISCO-CLASS-BASED-QOS-MIB counters under Zabbix. Monitor class-names cou
 
 Version: 0.1
 
-Abstract: Cisco CISCO-CLASS-BASED-QOS-MIB is one of the most complex and not clear Cisco SNMP MIBs. This python script as final output produces correlation between Intrface Name, Interface QoS ID, Class-name, QOS Index ID, parent object.
+Abstract: Cisco CISCO-CLASS-BASED-QOS-MIB is one of the most complex and not clear Cisco SNMP MIBs. This python script as final output produces in JSON format correlation between Intrface Name, Interface QoS ID, Class-name, QOS Index ID, parent object. Output is takeen by Zabbix Template (discovery rule) as input to produce final counters as "items".
 
 Script written in python 2.7, tested on Linux Centos7.
 
@@ -34,7 +34,10 @@ Script Installation:
  
  Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
  
+ Import Cisco.QOS.SNMP.For.Zabbix.xml to Zabbix Templates Configuration/Templates
  
+ Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
+
 
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
 I wrote new script under Python. Features which were missing in peshovec script were: duplicated class names, direction of atached policy map, nested Service Polices (very common in implementation).
