@@ -12,7 +12,7 @@ Script written in python 2.7, tested on Linux Centos7.
 
 ## Script Installation:
 
- Install Net-SNMP libraries:
+ ### Install Net-SNMP libraries:
  
   Unix# yum install net-snmp.x86_64
  
@@ -21,7 +21,7 @@ Script written in python 2.7, tested on Linux Centos7.
   Unix# yum install gcc.x86_64
  
  
- Install Python:
+ #### Install Python:
  
   Unix# yum install epel-release
  
@@ -32,12 +32,12 @@ Script written in python 2.7, tested on Linux Centos7.
   Unix# yum install python2-pip
  
  
- Install EasySNMP:
+### Install EasySNMP:
  
   pip install easysnmp
  
 
-Download and install CISCO-CLASS-BASED-QOS-MIB:
+### Download and install CISCO-CLASS-BASED-QOS-MIB:
  
   Download ftp://ftp.cisco.com/pub/mibs/v2/CISCO-CLASS-BASED-QOS-MIB.my
   
@@ -48,7 +48,7 @@ Download and install CISCO-CLASS-BASED-QOS-MIB:
   It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB
  
  
-Install scripts on Zabbix:
+### Install scripts on Zabbix:
 
  Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
 
@@ -56,7 +56,7 @@ Install scripts on Zabbix:
  
  Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
 
-
+## Credits
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
 I wrote new script under Python. Features which were missing in peshovec script were: duplicated class names, direction of flow for atached policy map, nested Service Polices (very common in implementation).
 
