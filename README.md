@@ -21,7 +21,7 @@ Script written in python 2.7, tested on Linux Centos7.
   Unix# yum install gcc.x86_64
  
  
- #### Install Python:
+ ### Install Python:
  
   Unix# yum install epel-release
  
