@@ -36,7 +36,8 @@ Script Installation:
  
   pip install easysnmp
  
- Download and install CISCO-CLASS-BASED-QOS-MIB:
+
+Download and install CISCO-CLASS-BASED-QOS-MIB:
  
   Download ftp://ftp.cisco.com/pub/mibs/v2/CISCO-CLASS-BASED-QOS-MIB.my
   
@@ -54,7 +55,6 @@ Script Installation:
  
  
  Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
-
 
 
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
