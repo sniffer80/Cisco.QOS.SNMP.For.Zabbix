@@ -48,11 +48,11 @@ Download and install CISCO-CLASS-BASED-QOS-MIB:
   It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB
  
  
+Install scripts on Zabbix:
+
  Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
- 
- 
+
  Import Cisco.QOS.SNMP.For.Zabbix.xml to Zabbix Templates Configuration/Templates
- 
  
  Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
 
