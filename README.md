@@ -20,6 +20,7 @@ Script Installation:
  
   Unix# yum install gcc.x86_64
  
+ 
  Install Python:
  
   Unix# yum install epel-release
@@ -30,6 +31,7 @@ Script Installation:
  
   Unix# yum install python2-pip
  
+ 
  Install EasySNMP:
  
   pip install easysnmp
@@ -39,16 +41,19 @@ Script Installation:
   Download ftp://ftp.cisco.com/pub/mibs/v2/CISCO-CLASS-BASED-QOS-MIB.my
   
   Put downloaded MIB file in SNMP-NET MIB direcotries, keep in mind to change extension from .my to .txt. You can check your NET-SNMP directories by executing "net-snmp-config --default-  mibdirs" command
- 
+  
  Check if MIB is installed properly by invoking any SNMP querry to object withing MIB. For example: "snmpbulkwalk -v 2c -c comm_str x.x.x.x cbQosConfigIndex"
  
- It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB
+  It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB
  
-  Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
  
-  Import Cisco.QOS.SNMP.For.Zabbix.xml to Zabbix Templates Configuration/Templates
+ Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
  
-  Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
+ 
+ Import Cisco.QOS.SNMP.For.Zabbix.xml to Zabbix Templates Configuration/Templates
+ 
+ 
+ Attach Template to Host and wait ~2min for results. You can build nice graphs based on produced items.
 
 
 
