@@ -45,7 +45,7 @@ Script written in python 2.7, tested on Linux Centos7.
   
  Check if MIB is installed properly by invoking any SNMP querry to object withing MIB. For example: "snmpbulkwalk -v 2c -c comm_str x.x.x.x cbQosConfigIndex"
  
-  It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB
+  It may turns out that you also need to download parent MIB for proper working of CISCO-CLASS-BASED-QOS-MIB. Then repeat steps for rest of parent MIBs http://snmp.cloudapps.cisco.com/Support/SNMP/do/BrowseMIB.do?local=en&step=2&mibName=CISCO-CLASS-BASED-QOS-MIB
  
  
 ### Install scripts on Zabbix:
