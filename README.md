@@ -32,7 +32,9 @@ Script Installation:
  
  pip install easysnmp
  
- Copy 
+ Copy Cisco.QOS.SNMP.For.Zabbix.py to your Zabbix external script directory /usr/lib/zabbix/externalscripts/
+ 
+ 
 
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
 I wrote new script under Python. Features which were missing in peshovec script were: duplicated class names, direction of atached policy map, nested Service Polices (very common in implementation).
