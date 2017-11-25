@@ -7,9 +7,9 @@ Version: 0.1
 
 Abstract: Cisco CISCO-CLASS-BASED-QOS-MIB is one of the most complex and not clear Cisco SNMP MIBs. This python script as final output produces in JSON format correlation between Intrface Name, Interface QoS ID, Class-name, QOS Config Index ID, parent object. Output is takeen by Zabbix Template (discovery rule) as input to produce final counters as "items".
 
-Script written in python 2.7, tested on Linux Centos7.
+Script written in python 2.7, tested on Linux Centos7, Zabbix version 3.4.2
 
-SNMP version testes "2c".
+SNMP version tested "2c".
 
 
 ## Script Installation:
@@ -61,4 +61,6 @@ SNMP version testes "2c".
 ## Credits
 Many thx and credits github.com/peshovec for initial concept. https://github.com/peshovec/zabbix-cisco-classname
 I wrote new script under Python. Features which were missing in peshovec script were: duplicated class names, direction of flow for atached policy map, nested Service Polices (very common in implementation).
+
+Thx for all users who installed and tested!
 
