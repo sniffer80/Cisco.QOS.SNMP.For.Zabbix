@@ -44,12 +44,17 @@ for item in snmp_session_querry:
         oid_index=item.oid_index,
         value=item.value
         )
-        ####print interface_list[x]
-	interface_list[x] = interface_list[x].rsplit('.')[1]
+	####print interface_list[x]
+	temp_int_list = interface_list[x].rsplit('.')
+	if len(temp_int_list) == 3:	
+ 		interface_list[x] = interface_list[x].rsplit('.')[1] + "." + interface_list[x].rsplit('.')[2]
+	if len(temp_int_list) == 2:
+		interface_list[x] = interface_list[x].rsplit('.')[1]
 	interface_list.append(0)
         ####print interface_list[x]
 	x +=1
 del x					
+del temp_int_list
 
 #SNMP List of QoS enabled interfaces "cbQosIfIndex" MIB
 
